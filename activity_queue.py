@@ -11,7 +11,7 @@ while True:
     if choice == '1':
         patient_name = input("Enter the patient's name: ")
         patient_queue.put(patient_name)
-        print(f"Patient {patient_name} met with the Doctor.")
+        print(f"Patient {patient_name} has been registered.")
     elif choice == '2':
         if not patient_queue.empty():
             print(f"Patient {patient_queue.get()} has met the doctor.")
